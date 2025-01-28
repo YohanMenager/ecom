@@ -1,4 +1,201 @@
-h1
+body
 {
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+ul
+{
+    list-style: none;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #222; */
+    align-items: center;
+    padding: 0px 5% 0px 5%;;
+}
+.navbar .logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.logo h1
+{
+    color: #d33bfd;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav
+{
+    align-items: center;
+
+    display: flex;
+}
+
+.nav ul{
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    
+}
+.nav ul li
+{
+    margin: 0 10px;
+}
+.nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover
+{
+    color: violet;
+}
+
+.nav ul li button
+{
+    padding: 5px 10px;
+    background-color: unset;
+    color: #d33bfd;
+    border: solid #d33bfd 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav ul li button:hover
+{
+    background-color: #d33bfd;
+    color: white;
+}
+
+.header
+{
+    background: linear-gradient(#13181d, #20212e, #341b47);
+    background-size: cover;
+}
+
+.second
+{
+    margin: 0;
+  background-color: #13181d;
+}
+
+
+.hero
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+}
+
+.presentation
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+    margin-top: 5%;
+}
+.product-presentation
+{
+    width: 100%;
+    flex-shrink: 3;
+}
+.product-presentation h1
+{
+    font-size: 4vw;
+    width: 80%;
+    margin: 0;
+}
+.product-presentation p
+{
+    color: white;
+    font-weight: 300;
+}
+.product-presentation button
+{
+    padding: 10px 20px;
+    background-color: #d33bfd;
+    color: white;
+    border: solid #d33bfd 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product-presentation button:hover
+{
+    background-color: unset;
+    color: #d33bfd;
+}
+
+.small-images
+{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.small-images .small
+{
+    padding: 20px;
+    background-color: #33314d;
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    transition: filter 0.5s;
+}
+.small-images .small:hover
+{
+    filter: brightness(50%);
+}
+
+.small-images .small img 
+{
+    width: 120px;
+    height: auto;
+}
+.presentation .image-presentation img
+{
+    width: 100%;
+    height: auto;
+}
+
+.new
+{
+    color: #d33bfd!important;
+}
+
+.second
+{
+    margin: 0;
+}
+
+footer
+{
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer h3
+{
+    color: #d33bfd;
+}
+footer p
+{
+    cursor: pointer;
+    color: #ccc;
 }
