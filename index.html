@@ -8,9 +8,14 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     
     <div class="header">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="logo">
                 <h1>HEADBOOST</h1>
             </div>
@@ -19,7 +24,8 @@
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#">Présentation</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><button>Acheter</button></li>
+                    <li><a><button>Acheter</button></a></li>
+                    <li><a href="formulaire.html"><button>Connexion</button></a></li>
                 </ul>
             </div>
 
