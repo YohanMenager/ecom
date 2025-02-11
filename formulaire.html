@@ -9,6 +9,8 @@
 </head>
 <body onload="afficherConnexion()">
 
+    <a href="index.html"><button class="retour">↩</button></a>
+
     <div class="form">
         <div class="form-switch">
             <h2 id="login-header" onclick="afficherConnexion()">Connexion</h2>
@@ -16,18 +18,23 @@
         </div>
         <div class="barre"></div>
         <div id="connexion" class="connexion">
-            <form action="index.html" method="post">
-                <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
-                <input type="password" name="password" id="password" placeholder="Mot de passe">
-                <button>Se connecter</button>
+            <form name="formConnexion" id="formConnexion" onchange="validerConnexion()">
+                <input type="text" name="username" id="usernameConnexion" placeholder="Nom d'utilisateur">
+                <p id="connexion-username-message"></p>
+                <input type="password" name="password" id="passwordConnexion" placeholder="Mot de passe">
+                <p id="connexion-password-message"></p>
+                <button type="submit" id="connexion-button" onclick="connexion()">Se connecter</button>
             </form>
         </div>
         <div id="inscription" class="inscription">
-            <form action="index.html" method="post">
-                <input type="text" name="username" id="username" placeholder="Nom d'utilisateur">
+            <form name="formInscription" id="formInscription" onchange="validerInscription()">
+                <input type="text" name="username" id="usernameInscription" placeholder="Nom d'utilisateur">
+                <p id="inscription-username-message"></p>
                 <input type="email" name="email" id="email" placeholder="Adresse email">
-                <input type="password" name="password" id="password" placeholder="Mot de passe">
-                <button>S'inscrire</button>
+                <p id="inscription-email-message"></p>
+                <input type="password" name="password" id="passwordInscription" placeholder="Mot de passe">
+                <p id="inscription-password-message"></p>
+                <button type="submit" id="inscription-button" onclick="inscription()">S'inscrire</button>
             </form>
         </div>
     </div>
